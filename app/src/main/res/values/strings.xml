@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">U2P4Conversor</string>
+    <string name="textViewInfo">Conversor de pulgadas y centímetros</string>
+    <string name="textViewHintPedir">Escribe el numero...</string>
+    <string name="buttonConvertir">Pulgadas a Cm</string>
+    <string name="editTextHintResultado">Resultado</string>
+    <string name="buttonConvertirCm">Cm a Pulgadas</string> <!--TODO: Ex1 Two-way conversion inch <-> cm-->
+    <string name="textViewException"></string> <!--TODO: Ex2 Numbers < 1 Exception-->
+</resources>

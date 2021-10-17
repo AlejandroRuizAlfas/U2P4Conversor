@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/textView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/meter_background"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/textViewInfo"
+        android:textColor="#0000ff"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_Pulgada"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginRight="8dp"
+        android:ems="10"
+        android:hint="@string/textViewHintPedir"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textColor="#202023"
+        app:layout_constraintLeft_toLeftOf="@id/textView2"
+        app:layout_constraintRight_toRightOf="@id/textView2"
+        app:layout_constraintTop_toBottomOf="@id/textView2"
+        tools:ignore="TouchTargetSizeCheck" />
+
+
+    <Button
+        android:id="@+id/button_Convertir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="120dp"
+        android:layout_marginBottom="24dp"
+        android:text="@string/buttonConvertir"
+        app:layout_constraintBottom_toTopOf="@+id/et_Resultado"
+        app:layout_constraintRight_toRightOf="@+id/et_Pulgada"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_Pulgada" />
+
+    <Button
+        android:id="@+id/button_Convertir2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="72dp"
+        android:layout_marginBottom="24dp"
+        android:text="@string/buttonConvertirCm"
+        app:layout_constraintBottom_toTopOf="@+id/et_Resultado"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/button_Convertir"
+        app:layout_constraintTop_toBottomOf="@+id/et_Pulgada"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/et_Resultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginRight="8dp"
+        android:ems="10"
+        android:hint="@string/editTextHintResultado"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textColor="#202023"
+        app:layout_constraintLeft_toLeftOf="@+id/et_Pulgada"
+        app:layout_constraintRight_toRightOf="@+id/et_Pulgada"
+        app:layout_constraintTop_toBottomOf="@+id/button_Convertir"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/et_Exception"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="159dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="159dp"
+        android:layout_marginBottom="456dp"
+        android:text="@string/textViewException"
+        android:textColor="#FF0000"
+        android:textSize="18sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_Resultado"
+        tools:visibility="visible" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
